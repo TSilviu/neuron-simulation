@@ -3,12 +3,12 @@ import math
 
 # INTEGRATE AND FIRE MODEL CONSTANTS
 
-El = -70;
-Vr = -70;
+El = -70e-3;
+Vr = -70e-3;
 Tm = 10;
-Rm = 10;
-Vt = -40;
-Ie = 2.9;
+Rm = 10e6;
+Vt = -40e-3;
+Ie = 3.1e-9;
 
 # 
 
@@ -31,7 +31,7 @@ def apply_euler(dt, clr):
 	plt.plot(ts,vs,color=clr)
 	
 clr = 'b'
-apply_euler(0.01, clr)
+apply_euler(0.001, clr)
 
 plt.xlabel("t (seconds)")
 plt.ylabel("v(t)")
