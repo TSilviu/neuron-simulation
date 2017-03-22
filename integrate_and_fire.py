@@ -18,7 +18,7 @@ Vt = -54e-3;
 Rmgs = 0.15
 P = 0.5
 Ts = 0.01
-Es = 0
+Es = -80e-3
 
 #
 
@@ -34,8 +34,8 @@ def apply_euler(dt):
 
 	t = 0
 
-	v1 = random.uniform(-80e-3, -54e-3)
-	v2 = random.uniform(-80e-3, -54e-3)
+	v1 = -70e-3#random.uniform(-80e-3, -54e-3)
+	v2 = -75e-3#random.uniform(-80e-3, -54e-3)
 
 	s1 = 0
 	s2 = 0
